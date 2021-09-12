@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Play from './Play';
+import Play from '../Play';
 
 const playgrounds = [Play];
 

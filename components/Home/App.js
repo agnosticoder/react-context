@@ -1,13 +1,15 @@
-import styles from '../../styles/modules/Hello.module.scss';
+import ParentComponent from '../ParentComponent';
+import styles from '../../styles/modules/App.module.scss';
+// Imported Context from LanguageContext Component and used it to wrap around Parent Component
+// Also gave the intial value of the context
+import { Context } from '../Context/LanguageContext';
 
-const App = () => {
-    let name = 'Satinder';
-
-    return (
-        <div>
-            <h2 className={styles.test}>Content color has bee applied using css modules but using scss</h2>
-        </div>
-    );
-};
+const App = () => (
+    <div className={styles.container}>
+        <Context.Provider value="English">
+            <ParentComponent />
+        </Context.Provider>
+    </div>
+);
 
 export default App;

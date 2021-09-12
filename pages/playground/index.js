@@ -1,10 +1,10 @@
-import Play from '../../Playground/index';
+import Index from '../../playground_components/Home/index';
 
 export default function Playground() {
     return (
         <div>
             <div>
-                <Play />
+                <Index />
             </div>
         </div>
     );
